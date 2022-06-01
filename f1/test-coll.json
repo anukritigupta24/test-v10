@@ -1,17 +1,18 @@
 {
 	"info": {
-		"_postman_id": "104be52f-ff71-454e-b523-369749a0ddb0",
+		"_postman_id": "c3b5d87d-d785-446a-afe2-44544c7c07a3",
 		"name": "ci-collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "Sample endpoint: Returns details about a particular user",
+			"id": "e87f9bfe-1ab0-41c3-b864-4c459cbecec6",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/user?id=-77387877",
+					"raw": "{{baseUrl}}/user?id=-7738787",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -21,7 +22,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "-77387877",
+							"value": "-7738787",
 							"description": "(Required) ID of the user"
 						}
 					]
@@ -29,6 +30,7 @@
 			},
 			"response": [
 				{
+					"id": "a9105afc-10a5-4963-8f31-38e632e0e79f",
 					"name": "Sample response: Details about a user by ID",
 					"originalRequest": {
 						"method": "GET",
@@ -64,9 +66,11 @@
 						}
 					],
 					"cookie": [],
+					"responseTime": null,
 					"body": "{\n \"id\": -44342126,\n \"name\": \"consectetur id eiusm\",\n \"tag\": \"in est nisi\"\n}"
 				},
 				{
+					"id": "fa55a83e-7801-4830-b71b-c7c7258ef241",
 					"name": "Unexpected error",
 					"originalRequest": {
 						"method": "GET",
@@ -97,6 +101,7 @@
 						}
 					],
 					"cookie": [],
+					"responseTime": null,
 					"body": "{\n \"code\": -80049303,\n \"message\": \"in vol\"\n}"
 				}
 			]
@@ -104,6 +109,7 @@
 	],
 	"variable": [
 		{
+			"id": "840eebb4-a21b-4d21-9871-6a5a4b160645",
 			"key": "baseUrl",
 			"value": "http://localhost:3000",
 			"type": "string"
