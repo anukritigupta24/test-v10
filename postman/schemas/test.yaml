@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-    title: viaggiatreno
+    title: test-coll
     version: 1.0.0
     description: |
         Descrittore non ufficiale OAS3 per le API erogate dal sito http://www.viaggiatreno.it/
