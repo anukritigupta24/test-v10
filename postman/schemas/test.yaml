@@ -3,7 +3,7 @@ info:
     title: test-coll-jhv
     version: 1.0.0
     description: |
-        Descrittore non ufficiale OAS3 per le API erogate dal sito http://www.viaggiatreno.it/
+        Descrittore non ufficiale OAS3 per le API erogate dal sito http://www.viaggiatreno.it/jjj
     termsOfService: http://www.viaggiatreno.it/viaggiatrenomobile/pages/noteLegali/noteLegali.jsp
 servers:
     -
