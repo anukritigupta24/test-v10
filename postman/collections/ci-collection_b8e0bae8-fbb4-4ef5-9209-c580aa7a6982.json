@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/user?id=-7738787",
+					"raw": "{{baseUrl}}/user?id=-77387",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -22,7 +22,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "-7738787",
+							"value": "-77387",
 							"description": "(Required) ID of the user"
 						}
 					]
@@ -58,11 +58,13 @@
 						{
 							"key": "x-next",
 							"value": "culpa dolore",
-							"description": "A link to the next page of responses"
+							"description": "A link to the next page of responses",
+							"enabled": true
 						},
 						{
 							"key": "Content-Type",
-							"value": "application/json"
+							"value": "application/json",
+							"enabled": true
 						}
 					],
 					"cookie": [],
@@ -97,7 +99,8 @@
 					"header": [
 						{
 							"key": "Content-Type",
-							"value": "application/json"
+							"value": "application/json",
+							"enabled": true
 						}
 					],
 					"cookie": [],
@@ -109,10 +112,9 @@
 	],
 	"variable": [
 		{
-			"id": "840eebb4-a21b-4d21-9871-6a5a4b160645",
+			"id": "e8da18d7-9885-4f13-9ac4-fe0e9f6a462b",
 			"key": "baseUrl",
-			"value": "http://localhost:3000",
-			"type": "string"
+			"value": "http://localhost:3000"
 		}
 	]
 }
