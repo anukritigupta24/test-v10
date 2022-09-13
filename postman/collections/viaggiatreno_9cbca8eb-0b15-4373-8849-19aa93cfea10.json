@@ -1,0 +1,537 @@
+{
+	"info": {
+		"_postman_id": "7f3197f5-a594-48b3-9ac2-b4edccb3a778",
+		"name": "viaggiatreno",
+		"description": "Descrittore non ufficiale OAS3 per le API erogate dal sito http://www.viaggiatreno.it/\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get a AndamentoTreno",
+			"id": "d65b8fed-00d1-4c89-afc6-fa3f93ae7c55",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/andamentoTreno/:andamentotrenoId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"andamentoTreno",
+						":andamentotrenoId"
+					],
+					"variable": [
+						{
+							"id": "1c52f5af-792b-4edc-9314-8a477497444d",
+							"key": "andamentotrenoId",
+							"value": "ex occaecat veniam",
+							"description": "(Required) "
+						}
+					]
+				},
+				"description": "Gets the details of a single instance of a `AndamentoTreno`."
+			},
+			"response": [
+				{
+					"id": "55095787-c7c9-4fad-8d6d-10279936cd07",
+					"name": "Successful response - returns a single `AndamentoTreno`.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/andamentoTreno/:andamentotrenoId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"andamentoTreno",
+								":andamentotrenoId"
+							],
+							"variable": [
+								{
+									"key": "andamentotrenoId",
+									"value": "ex occaecat veniam",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"tipoTreno\": \"dolor\",\n  \"orientamento\": \"esse consectetur consequat\",\n  \"codiceCliente\": -70527357,\n  \"fermateSoppresse\": \"elit culpa\",\n  \"dataPartenza\": \"Duis ut\",\n  \"fermate\": [\n    {\n      \"stazione\": \"TORINO STURA\",\n      \"programmata\": 1577596860000,\n      \"effettiva\": 1577596950000,\n      \"ritardo\": 2,\n      \"partenza_teorica\": 1577596860000,\n      \"isNextChanged\": false,\n      \"partenzaReale\": 1577596950000,\n      \"ritardoPartenza\": 2,\n      \"ritardoArrivo\": 0,\n      \"progressivo\": 1,\n      \"binarioEffettivoPartenzaCodice\": \"669\",\n      \"binarioEffettivoPartenzaTipo\": \"0\",\n      \"binarioEffettivoPartenzaDescrizione\": \"6\",\n      \"binarioProgrammatoPartenzaDescrizione\": \"6\",\n      \"tipoFermata\": \"P\",\n      \"visualizzaPrevista\": true,\n      \"nextChanged\": false,\n      \"nextTrattaType\": 0,\n      \"actualFermataType\": 1\n    },\n    {\n      \"stazione\": \"TORINO STURA\",\n      \"programmata\": 1577596860000,\n      \"effettiva\": 1577596950000,\n      \"ritardo\": 2,\n      \"partenza_teorica\": 1577596860000,\n      \"isNextChanged\": false,\n      \"partenzaReale\": 1577596950000,\n      \"ritardoPartenza\": 2,\n      \"ritardoArrivo\": 0,\n      \"progressivo\": 1,\n      \"binarioEffettivoPartenzaCodice\": \"669\",\n      \"binarioEffettivoPartenzaTipo\": \"0\",\n      \"binarioEffettivoPartenzaDescrizione\": \"6\",\n      \"binarioProgrammatoPartenzaDescrizione\": \"6\",\n      \"tipoFermata\": \"P\",\n      \"visualizzaPrevista\": true,\n      \"nextChanged\": false,\n      \"nextTrattaType\": 0,\n      \"actualFermataType\": 1\n    }\n  ],\n  \"anormalita\": \"id occaecat magna veniam\",\n  \"provvedimenti\": \"irure\",\n  \"segnalazioni\": \"reprehenderit pariatur\",\n  \"oraUltimoRilevamento\": 15514285,\n  \"stazioneUltimoRilevamento\": \"labore dolor\",\n  \"idDestinazione\": \"exercitation dolore\",\n  \"idOrigine\": \"ut irure aliquip\",\n  \"cambiNumero\": [\n    {\n      \"nuovoNumeroTreno\": \"officia quis\",\n      \"stazione\": \"commodo veniam\"\n    },\n    {\n      \"nuovoNumeroTreno\": \"veniam\",\n      \"stazione\": \"ut irure dolor aliquip\"\n    }\n  ],\n  \"hasProvvedimenti\": false,\n  \"descOrientamento\": [\n    \"sed Lorem exercitation\",\n    \"Duis anim\"\n  ],\n  \"compOraUltimoRilevamento\": \"eiusmod\",\n  \"motivoRitardoPrevalente\": \"veni\",\n  \"descrizioneVCO\": \"ut sint occaecat laboris sit\",\n  \"materiale_label\": \"id minim qui occaecat\",\n  \"numeroTreno\": 38441287,\n  \"categoria\": \"quis tempor eiusmod ut\",\n  \"categoriaDescrizione\": \"qui magna deserunt ipsum\",\n  \"origine\": \"non culpa dolore in\",\n  \"codOrigine\": \"labore dolore Lorem sunt\",\n  \"destinazione\": \"ipsum dolor nisi\",\n  \"codDestinazione\": \"reprehenderit esse eu qui\",\n  \"origineEstera\": \"id sed ea cillum\",\n  \"destinazioneEstera\": \"elit ut minim\",\n  \"oraPartenzaEstera\": \"in id minim elit\",\n  \"oraArrivoEstera\": \"amet pariatur\",\n  \"tratta\": 52422756,\n  \"regione\": 97815349,\n  \"origineZero\": \"sunt laboris \",\n  \"destinazioneZero\": \"lab\",\n  \"orarioPartenzaZero\": 90820592,\n  \"orarioArrivoZero\": 48669310,\n  \"circolante\": false,\n  \"binarioEffettivoArrivoCodice\": \"dolor nulla fugiat cupidatat\",\n  \"binarioEffettivoArrivoDescrizione\": \"ullamco sit\",\n  \"binarioEffettivoArrivoTipo\": \"quis\",\n  \"binarioProgrammatoArrivoCodice\": \"exercitation dolore sed in\",\n  \"binarioProgrammatoArrivoDescrizione\": \"consequat e\",\n  \"binarioEffettivoPartenzaCodice\": \"in aliquip ipsum ut\",\n  \"binarioEffettivoPartenzaDescrizione\": \"cillum do incididunt\",\n  \"binarioEffettivoPartenzaTipo\": \"do anim\",\n  \"binarioProgrammatoPartenzaCodice\": \"ullamco incididunt\",\n  \"binarioProgrammatoPartenzaDescrizione\": \"dolor dolore\",\n  \"subTitle\": \"nisi in\",\n  \"esisteCorsaZero\": \"labore dolor occaecat sunt\",\n  \"inStazione\": false,\n  \"haCambiNumero\": false,\n  \"nonPartito\": true,\n  \"provvedimento\": -43845424,\n  \"riprogrammazione\": \"officia reprehenderit deserunt dolore amet\",\n  \"orarioPartenza\": -61353474,\n  \"orarioArrivo\": 19599591,\n  \"stazionePartenza\": \"magna Lorem eiusmod\",\n  \"stazioneArrivo\": \"cupidatat deserunt\",\n  \"statoTreno\": \"Duis irure enim\",\n  \"corrispondenze\": \"cillum nisi in\",\n  \"ritardo\": -81686262,\n  \"tipoProdotto\": \"ad adipisicing consequat\",\n  \"compOrarioPartenzaZeroEffettivo\": \"laborum ex\",\n  \"compOrarioArrivoZeroEffettivo\": \"cillum exercitation ut laborum\",\n  \"compOrarioPartenzaZero\": \"laborum sint dolore amet do\",\n  \"compOrarioArrivoZero\": \"irure amet m\",\n  \"compOrarioArrivo\": \"Excepteur aliquip ut eu\",\n  \"compOrarioPartenza\": \"veniam\",\n  \"compNumeroTreno\": \"laborum occaecat velit Except\",\n  \"compOrientamento\": [\n    \"ad\",\n    \"et occaecat Duis \"\n  ],\n  \"compTipologiaTreno\": \"occae\",\n  \"compClassRitardoTxt\": \"eu veniam dolore consequat est\",\n  \"compClassRitardoLine\": \"non tempor\",\n  \"compImgRitardo2\": \"amet\",\n  \"compImgRitardo\": \"esse laboris qui in\",\n  \"compRitardo\": [\n    \"ea veniam\",\n    \"do\"\n  ],\n  \"compRitardoAndamento\": [\n    \"commodo ex ut\",\n    \"et\"\n  ],\n  \"compInStazionePartenza\": [\n    \"in veniam Ut\",\n    \"voluptate\"\n  ],\n  \"compInStazioneArrivo\": [\n    \"ut nostrud ipsum\",\n    \"exercitation nisi do culpa\"\n  ],\n  \"compOrarioEffettivoArrivo\": \"sed elit do\",\n  \"compDurata\": \"cillum dolor veniam mollit fugiat\",\n  \"compImgCambiNumerazione\": \"vel\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/autocompletaStazione/:stazione",
+			"id": "d84ca446-eec3-4f94-8c53-81f9c3029a0e",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/autocompletaStazione/:stazione",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"autocompletaStazione",
+						":stazione"
+					],
+					"variable": [
+						{
+							"id": "a5fe569d-22e5-404e-aea4-215eb6a0446e",
+							"key": "stazione",
+							"value": "LAT",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "33de64b1-ac8b-4a20-a2b9-4a0c27a565dd",
+					"name": "Una lista di stazioni che inizia per la stringa passata\nin `stazione`.\n",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/autocompletaStazione/:stazione",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"autocompletaStazione",
+								":stazione"
+							],
+							"variable": [
+								{
+									"key": "stazione",
+									"value": "LAT",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "LATIANO|S11606\nLATINA|S08608\nLATISANA LIGNANO B.|S03202\n"
+				}
+			]
+		},
+		{
+			"name": "Get a Fermata",
+			"id": "c38407c9-cd09-4352-b06f-45360b1f438f",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/fermata/:fermataId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"fermata",
+						":fermataId"
+					],
+					"variable": [
+						{
+							"id": "a49fd469-f4b9-44eb-aa13-f051eacfe4d7",
+							"key": "fermataId",
+							"value": "ex occaecat veniam",
+							"description": "(Required) A unique identifier for a `Fermata`."
+						}
+					]
+				},
+				"description": "Gets the details of a single instance of a `Fermata`."
+			},
+			"response": [
+				{
+					"id": "a50ad8b9-f676-4efb-ada6-5f19b4ce8091",
+					"name": "Successful response - returns a single `Fermata`.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fermata/:fermataId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fermata",
+								":fermataId"
+							],
+							"variable": [
+								{
+									"key": "fermataId",
+									"value": "ex occaecat veniam",
+									"description": "(Required) A unique identifier for a `Fermata`."
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"stazione\": \"TORINO STURA\",\n  \"programmata\": 1577596860000,\n  \"effettiva\": 1577596950000,\n  \"ritardo\": 2,\n  \"partenza_teorica\": 1577596860000,\n  \"isNextChanged\": false,\n  \"partenzaReale\": 1577596950000,\n  \"ritardoPartenza\": 2,\n  \"ritardoArrivo\": 0,\n  \"progressivo\": 1,\n  \"binarioEffettivoPartenzaCodice\": \"669\",\n  \"binarioEffettivoPartenzaTipo\": \"0\",\n  \"binarioEffettivoPartenzaDescrizione\": \"6\",\n  \"binarioProgrammatoPartenzaDescrizione\": \"6\",\n  \"tipoFermata\": \"P\",\n  \"visualizzaPrevista\": true,\n  \"nextChanged\": false,\n  \"nextTrattaType\": 0,\n  \"actualFermataType\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "/elencoStazioni/:regione",
+			"id": "d4953065-ada3-4d5c-b8fa-a609def25b86",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/elencoStazioni/:regione",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"elencoStazioni",
+						":regione"
+					],
+					"variable": [
+						{
+							"id": "69c5b8a5-aa5b-4a93-a12b-e0e83129bf3d",
+							"key": "regione",
+							"value": "98213474.75148192",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "7b6ad10d-c34a-4475-8f23-cbfba7939f70",
+					"name": "elenco delle stazioni per regione",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/elencoStazioni/:regione",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"elencoStazioni",
+								":regione"
+							],
+							"variable": [
+								{
+									"key": "regione",
+									"value": "98213474.75148192",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n  {\n    \"codReg\": 3,\n    \"tipoStazione\": 3,\n    \"dettZoomStaz\": [\n      {\n        \"codiceStazione\": \"S00462\",\n        \"zoomStartRange\": 8,\n        \"zoomStopRange\": 9,\n        \"pinpointVisibile\": true,\n        \"pinpointVisible\": true,\n        \"labelVisibile\": true,\n        \"labelVisible\": true\n      },\n      {\n        \"codiceStazione\": \"S00462\",\n        \"zoomStartRange\": 10,\n        \"zoomStopRange\": 11,\n        \"pinpointVisibile\": true,\n        \"pinpointVisible\": true,\n        \"labelVisibile\": true,\n        \"labelVisible\": true\n      }\n    ],\n    \"mappaCitta\": {\n      \"urlImagePinpoint\": \"\",\n      \"urlImageBaloon\": \"\"\n    },\n    \"codiceStazione\": \"S00462\",\n    \"codStazione\": \"S00462\",\n    \"lat\": 44.89479,\n    \"lon\": 8.208112,\n    \"latMappaCitta\": 0,\n    \"lonMappaCitta\": 0,\n    \"localita\": {\n      \"nomeLungo\": \"ASTI\",\n      \"nomeBreve\": \"Asti\",\n      \"label\": \"Asti\"\n    },\n    \"esterno\": false,\n    \"offsetX\": -4,\n    \"offsetY\": 18,\n    \"nomeCitta\": \"Asti\"\n  },\n  {\n    \"codReg\": 3,\n    \"tipoStazione\": 3,\n    \"dettZoomStaz\": [\n      {\n        \"codiceStazione\": \"S00462\",\n        \"zoomStartRange\": 8,\n        \"zoomStopRange\": 9,\n        \"pinpointVisibile\": true,\n        \"pinpointVisible\": true,\n        \"labelVisibile\": true,\n        \"labelVisible\": true\n      },\n      {\n        \"codiceStazione\": \"S00462\",\n        \"zoomStartRange\": 10,\n        \"zoomStopRange\": 11,\n        \"pinpointVisibile\": true,\n        \"pinpointVisible\": true,\n        \"labelVisibile\": true,\n        \"labelVisible\": true\n      }\n    ],\n    \"mappaCitta\": {\n      \"urlImagePinpoint\": \"\",\n      \"urlImageBaloon\": \"\"\n    },\n    \"codiceStazione\": \"S00462\",\n    \"codStazione\": \"S00462\",\n    \"lat\": 44.89479,\n    \"lon\": 8.208112,\n    \"latMappaCitta\": 0,\n    \"lonMappaCitta\": 0,\n    \"localita\": {\n      \"nomeLungo\": \"ASTI\",\n      \"nomeBreve\": \"Asti\",\n      \"label\": \"Asti\"\n    },\n    \"esterno\": false,\n    \"offsetX\": -4,\n    \"offsetY\": 18,\n    \"nomeCitta\": \"Asti\"\n  }\n]"
+				}
+			]
+		},
+		{
+			"name": "ritorna la regione di appartenenza di una stazione.",
+			"id": "b85daa67-abb6-43bf-84b5-5aeff7039c9c",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/regione/:idStazione",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"regione",
+						":idStazione"
+					],
+					"variable": [
+						{
+							"id": "b7907fa4-9630-4e51-b31f-ef0f6e53800f",
+							"key": "idStazione",
+							"value": "S12878",
+							"description": "(Required) A unique identifier for a `DettaglioStazione`."
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "c3e8dfff-d9f9-4520-9e61-f7d679aa013d",
+					"name": "Numeric identifier of the region",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/regione/:idStazione",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"regione",
+								":idStazione"
+							],
+							"variable": [
+								{
+									"key": "idStazione",
+									"value": "S12878",
+									"description": "(Required) A unique identifier for a `DettaglioStazione`."
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "-85932152"
+				}
+			]
+		},
+		{
+			"name": "/partenze/:idStazione/:httpDate",
+			"id": "a5062ce4-251a-4dbf-a42f-6d4da090865f",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/partenze/:idStazione/:httpDate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"partenze",
+						":idStazione",
+						":httpDate"
+					],
+					"variable": [
+						{
+							"id": "675319a6-7aab-4836-97c0-02de402f255a",
+							"key": "idStazione",
+							"value": "S12878",
+							"description": "(Required) A unique identifier for a `DettaglioStazione`."
+						},
+						{
+							"id": "881c7994-e689-4cfb-b273-fa3187b5b6f1",
+							"key": "httpDate",
+							"value": "ex occaecat veniam",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "898ab522-a684-4f77-b4c4-76c4077e8833",
+					"name": "Una lista di treni che partono dalla stazione indicata\nin un intervallo della data indicata.\n",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/partenze/:idStazione/:httpDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"partenze",
+								":idStazione",
+								":httpDate"
+							],
+							"variable": [
+								{
+									"key": "idStazione",
+									"value": "S12878",
+									"description": "(Required) A unique identifier for a `DettaglioStazione`."
+								},
+								{
+									"key": "httpDate",
+									"value": "ex occaecat veniam",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n  {\n    \"numeroTreno\": 8060261,\n    \"categoria\": \"ea incididun\",\n    \"categoriaDescrizione\": \"labore anim in\",\n    \"origine\": \"aute amet\",\n    \"codOrigine\": \"anim occaecat in proident\",\n    \"destinazione\": \"non esse\",\n    \"codDestinazione\": \"irure\",\n    \"origineEstera\": \"velit mollit incididunt irure\",\n    \"destinazioneEstera\": \"laboris adipisicing labore nisi\",\n    \"oraPartenzaEstera\": \"incididunt anim ex ut\",\n    \"oraArrivoEstera\": \"amet labore\",\n    \"tratta\": 79005145,\n    \"regione\": -65357508,\n    \"origineZero\": \"dolore Lorem quis\",\n    \"destinazioneZero\": \"enim officia incididunt mollit\",\n    \"orarioPartenzaZero\": \"tempor eiusmod Ut\",\n    \"orarioArrivoZero\": \"eiusmod\",\n    \"circolante\": true,\n    \"codiceCliente\": -23012362,\n    \"binarioEffettivoArrivoCodice\": \"reprehenderit\",\n    \"binarioEffettivoArrivoDescrizione\": \"eiusmod ut nostrud\",\n    \"binarioEffettivoArrivoTipo\": \"sit dolor laborum voluptate ut\",\n    \"binarioEffettivoPartenzaCodice\": \"mollit nisi id fugiat occaecat\",\n    \"binarioEffettivoPartenzaDescrizione\": \"laborum\",\n    \"binarioEffettivoPartenzaTipo\": \"Ut fugiat\",\n    \"binarioProgrammatoPartenzaCodice\": \"dolore velit laboris Ut\",\n    \"binarioProgrammatoPartenzaDescrizione\": \"Lorem adipisicing\",\n    \"binarioProgrammatoArrivoCodice\": \"elit aliquip fugiat ut anim\",\n    \"binarioProgrammatoArrivoDescrizione\": \"ea commodo Lorem velit\",\n    \"subTitle\": \"consequat culpa velit exercitation\",\n    \"esisteCorsaZero\": \"labore ad\",\n    \"orientamento\": \"Excepteur magna qui consectetur\",\n    \"inStazione\": false,\n    \"haCambiNumero\": false,\n    \"nonPartito\": false,\n    \"provvedimento\": 68263893,\n    \"riprogrammazione\": \"tempor culpa\",\n    \"orarioPartenza\": 91747583,\n    \"orarioArrivo\": \"aliquip sint veniam est fugiat\",\n    \"stazionePartenza\": \"in\",\n    \"stazioneArrivo\": \"aute Duis non ut\",\n    \"statoTreno\": \"nostrud aliqua pariatur et enim\",\n    \"corrispondenze\": \"quis reprehenderit deserunt adipisicing labore\",\n    \"servizi\": \"dolor ipsum veniam aute\",\n    \"ritardo\": -20872205,\n    \"tipoProdotto\": \"velit\",\n    \"compOrarioPartenzaZeroEffettivo\": \"nisi voluptate elit\",\n    \"compOrarioArrivoZeroEffettivo\": \"ut do\",\n    \"compOrarioPartenzaZero\": \"nostrud exercitation culpa in\",\n    \"compOrarioArrivoZero\": \"laborum aliquip ut nulla\",\n    \"compOrarioArrivo\": \"Excepteur velit pariatur\",\n    \"compOrarioPartenza\": \"dolor\",\n    \"compNumeroTreno\": \"ut adipisicing aliquip dolore pariatur\",\n    \"compOrientamento\": [\n      \"qui aliquip aliqua ad\",\n      \"culpa proident incididunt occaecat d\"\n    ],\n    \"compTipologiaTreno\": \"aute enim nulla velit\",\n    \"compClassRitardoTxt\": \"cillum reprehenderit Ut\",\n    \"compClassRitardoLine\": \"in non et ut\",\n    \"compImgRitardo2\": \"cupidatat laborum\",\n    \"compImgRitardo\": \"aute enim nulla\",\n    \"compRitardo\": [\n      \"sint in\",\n      \"exercitation non eu quis id\"\n    ],\n    \"compRitardoAndamento\": [\n      \"enim\",\n      \"elit \"\n    ],\n    \"compInStazionePartenza\": [\n      \"nulla in\",\n      \"fugiat\"\n    ],\n    \"compInStazioneArrivo\": [\n      \"in do\",\n      \"dolor Lorem Excepteur commodo\"\n    ],\n    \"compOrarioEffettivoArrivo\": \"incididunt magna\",\n    \"compDurata\": \"anim et\",\n    \"compImgCambiNumerazione\": \"amet ut Ut minim eu\",\n    \"materiale_label\": \"magna Lorem deserunt\"\n  },\n  {\n    \"numeroTreno\": -12310948,\n    \"categoria\": \"dolore voluptate ullamco commodo\",\n    \"categoriaDescrizione\": \"enim et culpa sit\",\n    \"origine\": \"culpa\",\n    \"codOrigine\": \"Lorem do est\",\n    \"destinazione\": \"anim cupidatat\",\n    \"codDestinazione\": \"minim anim esse cillum dolore\",\n    \"origineEstera\": \"deserunt mollit\",\n    \"destinazioneEstera\": \"nulla laboris deserunt sit\",\n    \"oraPartenzaEstera\": \"officia in aliquip\",\n    \"oraArrivoEstera\": \"irure dolor ali\",\n    \"tratta\": 4102320,\n    \"regione\": -72064131,\n    \"origineZero\": \"laborum nulla sint culpa\",\n    \"destinazioneZero\": \"Lorem eiusmod\",\n    \"orarioPartenzaZero\": \"Lorem ad in eiusmod enim\",\n    \"orarioArrivoZero\": \"nostrud do qui\",\n    \"circolante\": true,\n    \"codiceCliente\": -14206245,\n    \"binarioEffettivoArrivoCodice\": \"cupidatat enim adipisicing\",\n    \"binarioEffettivoArrivoDescrizione\": \"ullamco esse cillum\",\n    \"binarioEffettivoArrivoTipo\": \"cillum sed consectetur eu\",\n    \"binarioEffettivoPartenzaCodice\": \"incididunt cillum ut tempor laboris\",\n    \"binarioEffettivoPartenzaDescrizione\": \"ipsum ea ex\",\n    \"binarioEffettivoPartenzaTipo\": \"nostrud nulla eiusmod elit\",\n    \"binarioProgrammatoPartenzaCodice\": \"quis deserunt ut Ut\",\n    \"binarioProgrammatoPartenzaDescrizione\": \"laborum fugiat ea\",\n    \"binarioProgrammatoArrivoCodice\": \"velit i\",\n    \"binarioProgrammatoArrivoDescrizione\": \"ut culpa ex m\",\n    \"subTitle\": \"exercit\",\n    \"esisteCorsaZero\": \"nulla Excepteur aute magna eiusmod\",\n    \"orientamento\": \"et velit nisi\",\n    \"inStazione\": true,\n    \"haCambiNumero\": true,\n    \"nonPartito\": true,\n    \"provvedimento\": 61253527,\n    \"riprogrammazione\": \"et reprehenderit\",\n    \"orarioPartenza\": -35205323,\n    \"orarioArrivo\": \"ad Duis\",\n    \"stazionePartenza\": \"proident eu irure Ut\",\n    \"stazioneArrivo\": \"labore elit adipisicing\",\n    \"statoTreno\": \"cillum aliquip\",\n    \"corrispondenze\": \"deserunt ulla\",\n    \"servizi\": \"n\",\n    \"ritardo\": 82650005,\n    \"tipoProdotto\": \"\",\n    \"compOrarioPartenzaZeroEffettivo\": \"Excepteur incididunt voluptate ipsum\",\n    \"compOrarioArrivoZeroEffettivo\": \"quis in ut proident ex\",\n    \"compOrarioPartenzaZero\": \"dolore eu minim\",\n    \"compOrarioArrivoZero\": \"minim sed sunt laborum\",\n    \"compOrarioArrivo\": \"ad enim minim proident exercitation\",\n    \"compOrarioPartenza\": \"et eu\",\n    \"compNumeroTreno\": \"sit\",\n    \"compOrientamento\": [\n      \"amet culpa\",\n      \"eiusmod Excepteur aute\"\n    ],\n    \"compTipologiaTreno\": \"sunt\",\n    \"compClassRitardoTxt\": \"proident dolor dolore sit nostrud\",\n    \"compClassRitardoLine\": \"mollit\",\n    \"compImgRitardo2\": \"Excepteur incididunt aliquip ipsum\",\n    \"compImgRitardo\": \"officia est et non do\",\n    \"compRitardo\": [\n      \"esse Duis non\",\n      \"Excep\"\n    ],\n    \"compRitardoAndamento\": [\n      \"velit proident laborum\",\n      \"dolore aute\"\n    ],\n    \"compInStazionePartenza\": [\n      \"aute quis\",\n      \"culpa sit deserunt occaecat ullamco\"\n    ],\n    \"compInStazioneArrivo\": [\n      \"qui tempor\",\n      \"dolor in\"\n    ],\n    \"compOrarioEffettivoArrivo\": \"nostrud eu in ex\",\n    \"compDurata\": \"eiusmod sit\",\n    \"compImgCambiNumerazione\": \"ad ex\",\n    \"materiale_label\": \"enim aliquip m\"\n  }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get a DettaglioStazione",
+			"id": "bd5b38a5-ed2f-4ffd-ba7d-d1aee2c05506",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/dettagliostazione/:idStazione/:regione",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"dettagliostazione",
+						":idStazione",
+						":regione"
+					],
+					"variable": [
+						{
+							"id": "4895584e-7537-4d28-849b-bad34a0dcf3f",
+							"key": "idStazione",
+							"value": "S12878",
+							"description": "(Required) A unique identifier for a `DettaglioStazione`."
+						},
+						{
+							"id": "a511fe1a-f4ff-4c8c-b560-afb66046b6b5",
+							"key": "regione",
+							"value": "98213474.75148192",
+							"description": "(Required) "
+						}
+					]
+				},
+				"description": "Gets the details of a single instance of a `DettaglioStazione`."
+			},
+			"response": [
+				{
+					"id": "545228d9-1796-47f1-a7ce-1e265be3cd7c",
+					"name": "Successful response - returns a single `DettaglioStazione`.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/dettagliostazione/:idStazione/:regione",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"dettagliostazione",
+								":idStazione",
+								":regione"
+							],
+							"variable": [
+								{
+									"key": "idStazione",
+									"value": "S12878",
+									"description": "(Required) A unique identifier for a `DettaglioStazione`."
+								},
+								{
+									"key": "regione",
+									"value": "98213474.75148192",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"codReg\": -1479923,\n  \"tipoStazione\": 74716211,\n  \"dettZoomStaz\": [\n    {\n      \"codiceStazione\": \"S00462\",\n      \"zoomStartRange\": 10,\n      \"zoomStopRange\": 11,\n      \"pinpointVisibile\": true,\n      \"pinpointVisible\": true,\n      \"labelVisibile\": true,\n      \"labelVisible\": true\n    },\n    {\n      \"codiceStazione\": \"S00462\",\n      \"zoomStartRange\": 10,\n      \"zoomStopRange\": 11,\n      \"pinpointVisibile\": true,\n      \"pinpointVisible\": true,\n      \"labelVisibile\": true,\n      \"labelVisible\": true\n    }\n  ],\n  \"mappaCitta\": {\n    \"urlImagePinpoint\": \"reprehenderit et Lorem\",\n    \"urlImageBaloon\": \"consectetur adipisicing\"\n  },\n  \"codiceStazione\": \"et\",\n  \"codStazione\": \"laborum irure \",\n  \"lat\": 62824976.66523287,\n  \"lon\": -86432622.85947216,\n  \"latMappaCitta\": -26063780,\n  \"lonMappaCitta\": 18327641,\n  \"localita\": {\n    \"nomeLungo\": \"ASTI\",\n    \"nomeBreve\": \"Asti\",\n    \"label\": \"Asti\"\n  },\n  \"esterno\": false,\n  \"offsetX\": -32105183,\n  \"offsetY\": 95074479,\n  \"nomeCitta\": \"labore in\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "201b56fd-7ac3-4b30-a79c-1b39f0eb11fb",
+			"key": "baseUrl",
+			"value": "http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/",
+			"type": "string"
+		}
+	]
+}
