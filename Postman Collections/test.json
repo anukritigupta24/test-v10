@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "00215372-0c6b-4f31-a036-be228705c6ac",
+		"name": "mm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sample endpoint: Returns details about a particular user",
+			"_postman_id": "e21f81f0-90ff-4e08-befe-4f9ae70191ec",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user9?id=-86821421",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user9"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "-86821421",
+							"description": "(Required) ID of the user"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "a0251abe-b11a-4257-9c3b-cc048178f77c",
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user9?id=-86821421",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user9"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "-86821421"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"description": "A link to the next page of responses",
+							"key": "x-next",
+							"value": "qui"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n \"id\": -44570801,\n \"name\": \"sunt nisi\",\n \"tag\": \"aute non pariatur\"\n}"
+				},
+				{
+					"id": "b13310ad-fe6d-4241-bc48-75c8345f739c",
+					"name": "Unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user9?id=-86821421",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user9"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "-86821421"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n \"code\": 50763200,\n \"message\": \"deserunt consectetur dolor sunt\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "d2e9b0a0-8657-48ff-a3d9-a67de006106c",
+			"key": "baseUrl",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
